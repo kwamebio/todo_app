@@ -23,16 +23,16 @@ default: &default
 
 development:
   <<: *default
-  database: todoapp
+  database: todoapp_kwame
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  username: postgres
+  username: ben
 
   # The password associated with the postgres role (username).
-  password: postgress
+  password: papakofi98
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -57,10 +57,10 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: todoapp
+  database: todoapp_kwame
   host: 127.0.0.1
-  username: postgres
-  password: postgres
+  username: ben
+  password: papakofi98
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -84,6 +84,6 @@ test:
 #
 production:
   <<: *default
-  database: todoapp
-  username: postgres
-  password: postgres
+  database: todoapp_kwame
+  username: ben
+  password: papakofi98
